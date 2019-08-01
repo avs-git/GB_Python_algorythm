@@ -4,10 +4,7 @@ num = int(input('Введите номер буквы: '))
 
 
 def get_letter(num):
-    if not (0 < num < 27):
-        return f'в алфавите нет столько букв'
-
-    return chr(ord('a') + num - 1)
+    return chr(ord('a') + num - 1) if 0 < num < 27 else f'в алфавите нет столько букв'
 
 
 print(get_letter(num))

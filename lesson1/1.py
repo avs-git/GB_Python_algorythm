@@ -3,8 +3,8 @@
 digit = int(input('Введите трёхзначное число: '))
 
 c = digit % 10
-b = int(digit / 10) % 10
-a = int(digit / 100)
+b = digit // 10 % 10
+a = digit // 100
 
 print(f'Сумма цифр в числе {digit} : {a +  b + c}')
 print(f'Произведение цифр в числе {digit} : {a *  b * c}')
